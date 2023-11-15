@@ -2,6 +2,8 @@ const inquirer = require('inquirer'); //inquirer dependancy
 const mysql = require('mysql2'); //using mysql
 require('dotenv').config(); //dotenv for password security to github.
 
+console.log("=== Employee Management System ===");
+
 
 const connection = mysql.createConnection({ //Creat connection to my database.
     host: 'localhost',
