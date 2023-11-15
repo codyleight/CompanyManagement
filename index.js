@@ -87,6 +87,7 @@ function viewAllEmployees() {
     connection.query('SELECT * FROM employees', (err, results) => {
       if (err) throw err;
       console.table(results);
+      init();
       
      
     });
@@ -96,6 +97,7 @@ function viewAllEmployees() {
     connection.query('SELECT * FROM roles', (err, results) => {
       if (err) throw err;
       console.table(results);
+      init();
      
     });
   }
@@ -104,6 +106,7 @@ function viewAllEmployees() {
     connection.query('SELECT * FROM department', (err, results) => {
       if (err) throw err;
       console.table(results);
+      init();
      
     });
   }
@@ -141,6 +144,7 @@ function viewAllEmployees() {
         connection.query(query, values, (err, result) => {
           if (err) throw err;
           console.log('Employee added successfully!');
+          init();
         });
       });
   }
@@ -173,6 +177,7 @@ function viewAllEmployees() {
         connection.query(query, values, (err, result) => {
           if (err) throw err;
           console.log('Role added successfully!');
+          init();
         });
       });
   }
@@ -195,6 +200,7 @@ function viewAllEmployees() {
         connection.query(query, values, (err, result) => {
           if (err) throw err;
           console.log('Department added successfully!');
+          init();
         });
       });
   }
@@ -262,6 +268,7 @@ function viewAllEmployees() {
             (err, result) => {
               if (err) throw err;
               console.log('Employee updated successfully!');
+              init();
             }
           );
         });
