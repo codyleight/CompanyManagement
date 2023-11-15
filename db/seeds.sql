@@ -18,5 +18,5 @@ INSERT INTO roles (id, title, department_id, salary) VALUES (8, 'Sale Lead', 2, 
 
 
 
-INSERT INTO employees (id, first_name, last_name, role_id, manager_id) VALUES (1, 'John', 'Doe', 1, NULL);
-INSERT INTO employees (id, first_name, last_name, role_id, manager_id) VALUES (2, 'Jane', 'Smith', 2, 1);
+INSERT INTO employees (id, first_name, last_name, role_id, manager_id) VALUES (1, 'Sam', 'Smith', 1, NULL);
+INSERT INTO employees (id, first_name, last_name, role_id, manager_id) VALUES (2, 'Ariana', 'Grande', 2, 1);

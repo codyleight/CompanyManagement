@@ -2,7 +2,9 @@ const inquirer = require('inquirer'); //inquirer dependancy
 const mysql = require('mysql2'); //using mysql
 require('dotenv').config(); //dotenv for password security to github.
 
+console.log("==================================");
 console.log("=== Employee Management System ===");
+console.log("==================================");
 
 
 const connection = mysql.createConnection({ //Creat connection to my database.
@@ -211,8 +213,8 @@ function viewAllEmployees() {
       if (err) throw err;
       console.table(results);
   
-      // Extract the employee names from the results
-      const employeeNames = results.map((employee) => `${employee.first_name} ${employee.last_name}`);
+      
+      const employeeNames = results.map((employee) => `${employee.first_name} ${employee.last_name}`); //map employee names into a vaariable.
   
       // Prompt the user to choose an employee to update
       inquirer
